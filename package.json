@@ -1,0 +1,18 @@
+{
+  "name": "tundra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev:shop": "npm run dev --workspace @tundra/shop",
+    "dev:admin": "npm run dev --workspace @tundra/admin",
+    "build:shop": "npm run build --workspace @tundra/shop",
+    "build:admin": "npm run build --workspace @tundra/admin"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.34"
+  }
+}
