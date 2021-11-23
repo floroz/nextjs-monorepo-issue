@@ -1,7 +1,12 @@
-module.exports = {
-  reactStrictMode: true,
-  // Enabling ExternalDir throws the CSS Modules not allowed from Node Modules error.
-  // experimental: {
-  //   externalDir: true
-  // }
-};
+const withTM = require("next-transpile-modules");
+const { withPlugins } = require("next-compose-plugins");
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withPlugins(
+  [withTM(["@tundra/web-common-ui"]), withBundleAnalyzer],
+  {
+    reactStrictMode: true,
+  }
+);

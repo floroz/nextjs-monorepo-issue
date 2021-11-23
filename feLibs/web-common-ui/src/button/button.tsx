@@ -1,5 +1,5 @@
 import React from "react";
-import { randomString } from "@tundra/shared";
+import { randomString } from "@tundra/common";
 import styles from "./button.module.css";
 // const styles = { button: "button" };
 

@@ -1,0 +1,14 @@
+{
+  "name": "@tundra/web-common-ui",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./alert": "./alert/src/index.ts",
+    "./badge": "./badge/src/index.ts"
+  },
+  "dependencies": {
+    "@tundra/common": "*"
+  }
+}

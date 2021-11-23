@@ -1,18 +1,26 @@
 {
   "name": "tundra",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": "true",
   "workspaces": [
     "apps/*",
-    "libs/*"
+    "feLibs/*"
   ],
   "scripts": {
-    "dev:shop": "npm run dev --workspace @tundra/shop",
-    "dev:admin": "npm run dev --workspace @tundra/admin",
-    "build:shop": "npm run build --workspace @tundra/shop",
-    "build:admin": "npm run build --workspace @tundra/admin"
+    "dev:shop": "yarn workspace @tundra/shop dev",
+    "dev:admin": "yarn workspace @tundra/admin dev",
+    "build:shop": "yarn workspace @tundra/shop build",
+    "build:admin": "yarn workspace @tundra/admin build",
+    "analyze:shop": "ANALYZE=true yarn workspace @tundra/shop build"
   },
   "devDependencies": {
-    "@types/react": "^17.0.34"
+    "@next/bundle-analyzer": "^12.0.4",
+    "@types/react": "^17.0.34",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.0.0",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "typescript": "^4.5.2"
   }
 }
