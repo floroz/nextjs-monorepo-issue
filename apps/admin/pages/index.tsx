@@ -1,4 +1,4 @@
-import { Button } from "@tundra/web-common-ui";
+import { Button } from "@tundra/web-common-ui-shared";
 
 export default function Home() {
   return (

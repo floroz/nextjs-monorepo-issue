@@ -1,0 +1,9 @@
+{
+  "name": "@tundra/web-common-ui-shared",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@tundra/common": "*"
+  }
+}

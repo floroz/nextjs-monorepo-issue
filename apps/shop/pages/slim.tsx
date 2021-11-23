@@ -1,5 +1,5 @@
-import { Badge } from "@tundra/web-common-ui/badge";
-import { Alert } from "@tundra/web-common-ui/alert";
+import { Badge } from "@tundra/web-common-ui-badge";
+import { Alert } from "@tundra/web-common-ui-alert";
 
 export default function Home() {
   return (

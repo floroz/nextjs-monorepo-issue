@@ -1,5 +1,5 @@
-import { Button } from "@tundra/web-common-ui";
-import { Badge } from "@tundra/web-common-ui/badge";
+import { Button } from "@tundra/web-common-ui-shared";
+import { Badge } from "@tundra/web-common-ui-badge";
 
 export default function Home() {
   return (
